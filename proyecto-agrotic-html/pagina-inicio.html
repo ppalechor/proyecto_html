@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroTic - Panel</title>
+  <link rel="stylesheet" href="css/paginainicio.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo/logo.svg" alt="Logo de AgroTic">
+    </div>
+    <nav class="menu">
+      <ul>
+        <li class="active"><a href="paginas/inicio.html" target="contentFrame"><span>Inicio</span></a></li>
+        <li><a href="paginas/iot.html" target="contentFrame"><span>IoT</span></a></li>
+        <li><a href="paginas/cultivos.html" target="contentFrame"><span>Cultivos</span></a></li>
+        <li><a href="paginas/fitosanitario.html" target="contentFrame"><span>Fitosanitario</span></a></li>
+        <li><a href="paginas/finanzas.html" target="contentFrame"><span>Finanzas</span></a></li>
+        <li><a href="paginas/inventario.html" target="contentFrame"><span>Inventario</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Contenido -->
+  <div class="main-content">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="header-icons">
+        <a href="#"><img src="imagen/notificacion.png" alt="Notificaciones"></a>
+        <a href="#"><img src="imagen/usuario.png" alt="Usuario"></a>
+        <a href="index.html"><img src="imagen/cerrarsesion.png" alt="Cerrar sesión"></a>
+      </div>
+    </div>
+
+    <!-- Iframe donde se cargan las otras páginas -->
+    <iframe name="contentFrame" src="paginas/inicio.html" frameborder="0" class="content-frame"></iframe>
+  </div>
+</body>
+</html>

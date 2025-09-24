@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una cuenta</title>
+    <link rel="stylesheet" href="css/crearcuenta.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo/logo.svg" alt="Logo de AgroTic">
+    </div>
+    <div class="card">
+        <h2>Crea una cuenta</h2>
+        <p>Es rápido y fácil</p>
+        <form action="index.html" method="get">
+            <div class="form-row">
+                <input type="text" placeholder="Nombre" class="input-half" required>
+                <input type="text" placeholder="Apellido" class="input-half" required>
+            </div>
+            <select class="input-full" required>
+                <option value="" disabled selected hidden>Aprendiz</option>
+                <option value="Aprendiz">Aprendiz</option>
+                <option value="Instructor">Instructor</option>
+                <option value="Pasante">Pasante</option>
+                <option value="Administrador">Administrador</option>
+            </select>
+            <div class="form-row">
+                <select class="input-half-doc" required>
+                    <option value="" disabled selected hidden>Tipo de documento</option>
+                    <option value="C.C.">C.C.</option>
+                    <option value="T.I.">T.I.</option>
+                </select>
+                <input type="text" placeholder="Número de documento" class="input-half-num" required>
+            </div>
+            <input type="email" placeholder="Correo electrónico" class="input-full" required>
+            <input type="password" placeholder="Contraseña" class="input-full" required>
+            <button type="submit" class="btn-primary">Registrarse</button>
+        </form>
+        <a href="index.html" class="has-account">¿Ya tienes una cuenta?</a>
+    </div>
+</body>
+</html>
