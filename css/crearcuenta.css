@@ -1,0 +1,104 @@
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-half, .input-half-doc {
+    width: 48%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.input-half-num {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+.input-full {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.input-half:focus, .input-full:focus, .input-half-doc:focus, .input-half-num:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.has-account {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.has-account:hover {
+    color: #4CAF50;
+}
