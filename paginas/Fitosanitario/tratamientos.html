@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamientos EPA</title>
+  <link rel="stylesheet" href="css/tratamientos.css">
+</head>
+<body>
+  <header>
+    <h1>Enfermedades</h1>
+    <div class="search">
+        <input type="text" placeholder="Buscar...">
+      </div>
+  </header>
+  <main>
+    <section class="left">
+      <div class="tabs">
+        <a href="fitosanitario.html">EPA</a>
+        <a href="#" class="active">Tratamientos</a>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Fusarium TR4</td>
+            <td>Hongo que causa marchitez y muerte en plantas de banano.</td>
+            <td><img src="../Fitosanitario/img/img5.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Moko</td>
+            <td>Enfermedad bacteriana que provoca marchitez y pudrición en plátano y banano.</td>
+            <td><img src="../Fitosanitario/img/img2.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Mancha foliar</td>
+            <td>Hongos que generan manchas marrones en las hojas, reduciendo la fotosíntesis.</td>
+            <td><img src="../Fitosanitario/img/img3.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>Moniliasis</td>
+            <td>Hongo que afecta frutos, causando pudrición y pérdida de cosecha.</td>
+            <td><img src="../Fitosanitario/img/img4.jpg" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="right">
+      <h2>Registro de Tratamiento</h2>
+      <form>
+        <div class="row">
+          <select>
+            <option>ID de EPA</option>
+            <option>001</option>
+            <option>002</option>
+            <option>003</option>
+            <option>004</option>
+          </select>
+          <input type="text" placeholder="Frecuencia">
+          <input type="text" placeholder="Dosis">
+        </div>
+        <br>
+        <div class="form-group">
+          <textarea placeholder="Descripción"></textarea>
+        </div>
+        <button class="btn" type="submit">Registrar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

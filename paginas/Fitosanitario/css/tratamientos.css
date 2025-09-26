@@ -1,0 +1,117 @@
+
+    * {box-sizing: border-box; font-family: Arial, sans-serif;}
+    body {
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      padding: 1rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    main {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    /* Panel izquierdo */
+    .left {
+      flex: 2;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .tabs {
+      display: flex;
+      gap: .5rem;
+      margin-bottom: 1rem;
+    }
+    .tabs a {
+      flex: 1;
+      padding: .5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      background: #eee;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+    }
+    .tabs .active {
+      background: #28a745;
+      color: #fff;
+    }
+    .search {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: .5rem;
+    }
+    .search input {
+      padding: .3rem .5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: .5rem;
+    }
+    table th, table td {
+      padding: .5rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    table img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    /* Panel derecho */
+    .right {
+      flex: 1;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .right h2 {
+      margin-top: 0;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .8rem;
+    }
+    .row {
+      display: flex;
+      gap: .5rem;
+    }
+    .row input, .row select {
+      flex: 1;
+      padding: .5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      padding: .5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    .btn {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+    @media (max-width: 768px){
+      main {flex-direction: column;}
+    }
+  
